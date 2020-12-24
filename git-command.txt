@@ -1,0 +1,10 @@
+git init		//将当前目录初始化为本地仓库
+git remote add url name	//关联远程仓库并命名 url为远程仓库地址 name为别名
+git remote -v		//查看关联的远程仓库
+git remote rm name	//删除关联远程仓库
+git add filename	//添加指定文件/文件夹至暂存区
+git add			//将修改操作的文件和未跟踪新添加的文件添加到git系统的暂存区，注意不包括删除
+git add -u		//表示将已跟踪文件中的修改和删除的文件添加到暂存区，不包括新增加的文件
+git add -A		//表示将所有的已跟踪的文件的修改与删除和新增的未跟踪的文件都添加到暂存区
+git rm -r --cached	//删除所有暂存区文件
+git commit -am des	//提交暂存区文件至本地仓库 des为提交注释 -a参数可以将所有已跟踪文件中的执行修改或删除操作的文件都提交到本地仓库，即使它们没有经过git add添加到暂存区
