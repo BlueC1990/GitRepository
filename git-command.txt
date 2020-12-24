@@ -1,0 +1,22 @@
+git init			//将当前目录初始化为本地仓库
+git remote add url name		//关联远程仓库并命名 url为远程仓库地址 name为别名
+git remote -v			//查看关联的远程仓库
+git remote rm name		//删除关联远程仓库
+git add filename		//添加指定文件/文件夹至暂存区
+git add				//将修改操作的文件和未跟踪新添加的文件添加到git系统的暂存区，注意不包括删除
+git add -u			//表示将已跟踪文件中的修改和删除的文件添加到暂存区，不包括新增加的文件
+git add -A			//表示将所有的已跟踪的文件的修改与删除和新增的未跟踪的文件都添加到暂存区
+git rm -r --cached		//删除所有暂存区文件
+git commit -am des		//提交暂存区文件至本地仓库 des为提交注释 -a参数可以将所有已跟踪文件中的执行修改或删除操作的文件都提交到本地仓库，即使它们没有经过git add添加到暂存区
+git status			//查看状态
+git push name branch		//将本地仓库推送至远程仓库 name远程服务名 branch远程分支
+
+git fetch name branch		//从指定远程分支获取最新的commit信息
+
+git diff command list		//--stat参数只展示差异文件;执行diff命令前需先执行fetch命令拉取最新的commit信息
+git diff			//查看编码空间与暂存区的差异
+git diff branch			//查看编码空间与本地仓库的区别
+git diff name/branch		//查看编码空间与远程仓库的差异
+git diff FETCH_HEAD		//同上一条命令
+git diff name/branch branch	//查看远程仓库与本地仓库的区别
+git diff --cached		//查看暂存区与最新commit的区别
