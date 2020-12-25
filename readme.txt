@@ -7,3 +7,5 @@ command stuty!
 add!
 
 diff test!
+
+merge test!
