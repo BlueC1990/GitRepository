@@ -9,3 +9,5 @@ add!
 diff test!
 
 merge test!
+
+stuty test!
